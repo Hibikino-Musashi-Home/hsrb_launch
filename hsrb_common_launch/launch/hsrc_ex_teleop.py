@@ -87,7 +87,7 @@ def generate_launch_description():
                     condition=IfCondition(LaunchConfiguration('use_joy_node')))
 
     joystick_teleop_launch = PathJoinSubstitution(
-        [FindPackageShare('hsrb_joystick_teleop'), 'launch', 'hsrb_joystick_control.launch.py'])
+        [FindPackageShare('hsrb_joystick_teleop'), 'launch', 'hsrc_ex_joystick_control.launch.py'])
     joystick_teleop_node = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(joystick_teleop_launch))
 
